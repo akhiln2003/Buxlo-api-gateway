@@ -32,6 +32,15 @@ export const ROUTES = [
             target: `${process.env.USER_SERVICE_URL}/user`,
             changeOrigin: true,
         }
+    },
+    {
+        url: '/api/user',
+        auth:false,
+        proxy:{
+            target: `${process.env.USER_SERVICE_URL}/user`,
+            changeOrigin: true,
+        }
     }
+    
     
 ]
