@@ -34,10 +34,10 @@ export const ROUTES = [
         }
     },
     {
-        url: '/api/user',
-        auth:false,
+        url: '/api/subscription',
+        auth:true,
         proxy:{
-            target: `${process.env.USER_SERVICE_URL}/user`,
+            target: `${process.env.SUBSCRIPTION_SERVICE_URL}/subscription`,
             changeOrigin: true,
         }
     }
