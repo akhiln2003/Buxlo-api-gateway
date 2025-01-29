@@ -37,7 +37,7 @@ export const ROUTES = [
         url: '/api/subscription',
         auth:true,
         proxy:{
-            target: `${process.env.SUBSCRIPTION_SERVICE_URL}/subscription`,
+            target: `${process.env.PAYMENT_SERVICE_URL}/payment`,
             changeOrigin: true,
         }
     }
