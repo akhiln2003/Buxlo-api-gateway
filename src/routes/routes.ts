@@ -40,6 +40,14 @@ export const ROUTES = [
             target: `${process.env.PAYMENT_SERVICE_URL}/payment`,
             changeOrigin: true,
         }
+    },
+    {
+        url: '/api/chat',
+        auth:true,
+        proxy:{
+            target: `${process.env.CHAT_SERVICE_URL}/chat`,
+            changeOrigin: true,
+        }
     }
     
     
