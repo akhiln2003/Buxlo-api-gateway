@@ -19,7 +19,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@buxlo/common": "^1.0.48",
+    "@buxlo/common": "^1.0.90",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
