@@ -48,6 +48,14 @@ export const ROUTES = [
             target: `${process.env.CHAT_SERVICE_URL}/chat`,
             changeOrigin: true,
         }
+    },
+     {
+        url: '/api/notification',
+        auth:true,
+        proxy:{
+            target: `${process.env.NOTIFICATION_SERVICE_URL}/notification`,
+            changeOrigin: true,
+        }
     }
     
     
