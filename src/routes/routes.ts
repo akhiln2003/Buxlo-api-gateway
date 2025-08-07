@@ -56,6 +56,14 @@ export const ROUTES = [
             target: `${process.env.NOTIFICATION_SERVICE_URL}/notification`,
             changeOrigin: true,
         }
+    },
+    {
+        url: '/api/booking',
+        auth:true,
+        proxy:{
+            target: `${process.env.BOOKING_SERVICE_URL}/booking`,
+            changeOrigin: true,
+        }
     }
     
     
